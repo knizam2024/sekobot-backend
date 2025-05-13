@@ -1,6 +1,5 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, WebAppInfo
 from telegram.ext import Application, CommandHandler, ContextTypes
-import threading
 import os
 
 BOT_TOKEN = "7887402540:AAFQkdijjgFu-II1Of_JZfN34XfxVhGQXB4EN"
@@ -28,10 +27,9 @@ def main():
     app.run_polling()
 
 # Background thread to run bot
-bot_thread = threading.Thread(target=main)
-bot_thread.start()
-
-
-
 if __name__ == "__main__":
     main()
+
+
+
+
