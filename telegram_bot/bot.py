@@ -2,7 +2,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, WebAppI
 from telegram.ext import Application, CommandHandler, ContextTypes
 import os
 
-BOT_TOKEN = "7887402540:AAFQkdijjgFu-II1Of_JZfN34XfxVhGQXB4EN"
+BOT_TOKEN = "7887402540:AAFQkdijjgFu-II1Of_JZfN34XfxVhGQXB4"
 
 ALLOWED_GROUPS = [-38813096]  # Replace with real group chat IDs
 
