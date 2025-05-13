@@ -4,12 +4,12 @@ import os
 
 BOT_TOKEN = "7887402540:AAFQkdijjgFu-II1Of_JZfN34XfxVhGQXB4"
 
-ALLOWED_GROUPS = [-38813096]  # Replace with real group chat IDs
+#ALLOWED_GROUPS = [-38813096]  # Replace with real group chat IDs
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if update.effective_chat.id not in ALLOWED_GROUPS:
-        await update.message.reply_text("🚫 This bot is not allowed in this group.")
-        return
+    #if update.effective_chat.id not in ALLOWED_GROUPS:
+        #await update.message.reply_text("🚫 This bot is not allowed in this group.")
+        #return
 
     keyboard = [
         [InlineKeyboardButton("📝 Submit Absence", web_app=WebAppInfo(url="https://sekobot-git-main-knizams-projects.vercel.app/?type=absence"))],
