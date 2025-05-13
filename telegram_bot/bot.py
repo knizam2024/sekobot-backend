@@ -21,13 +21,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("📌 Please choose an action:", reply_markup=reply_markup)
 
 def main():
-    app = Application.builder().token(os.getenv("BOT_TOKEN")).build()
+    app = Application.builder().token(os.getenv("7887402540:AAFQkdijjgFu-II1Of_JZfN34XfxVhGQXB4EN")).build()
     app.add_handler(CommandHandler("start", start))
     app.run_polling()
 
 # Background thread to run bot
-bot_thread = threading.Thread(target=run_bot)
+bot_thread = threading.Thread(target=main)
 bot_thread.start()
+
 
 
 if __name__ == "__main__":
