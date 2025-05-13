@@ -3,6 +3,8 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 import threading
 import os
 
+BOT_TOKEN = "7887402540:AAFQkdijjgFu-II1Of_JZfN34XfxVhGQXB4EN"
+
 ALLOWED_GROUPS = [-38813096]  # Replace with real group chat IDs
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -21,7 +23,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("📌 Please choose an action:", reply_markup=reply_markup)
 
 def main():
-    app = Application.builder().token(os.getenv("7887402540:AAFQkdijjgFu-II1Of_JZfN34XfxVhGQXB4EN")).build()
+    app = Application.builder().token(BOT_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.run_polling()
 
